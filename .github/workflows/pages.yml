@@ -26,11 +26,9 @@ jobs:
       - name: Restore and verify byte-locked assets
         run: bash tools/restore-assets.sh
 
-      # enablement turns Pages on for the repo the first time this runs, so the
-      # deploy does not need anyone to flip a setting by hand.
+      # Pages must already be set to build from GitHub Actions. The workflow token
+      # cannot turn that on: POST /repos/{owner}/{repo}/pages needs repo admin.
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
