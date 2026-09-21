@@ -33,6 +33,7 @@
 
       <nav aria-label="Primary">
         <ul class="nav-links">
+          <li><a href="../#network">Network</a></li>
           <li><a href="../#why">Why Shipfront</a></li>
           <li><a href="../contact/">Contact</a></li>
         </ul>
@@ -50,12 +51,13 @@
 
   <main id="main">
     <div class="wrap">
-      <section class="page">
-        <p class="kicker" data-reveal>Quote</p>
-        <h1 class="clip" data-clip style="--i:1"><span>Get a Quote</span></h1>
-        <p class="page-lead" data-reveal style="--i:2">Name, email, and company. This form stays in your browser. Nothing is posted to a server. Use info@myshipfront.com if you want the note to land.</p>
+      <section class="page page-split">
+        <div>
+          <p class="kicker" data-reveal>Quote</p>
+          <h1 class="clip" data-clip style="--i:1"><span>Get a Quote</span></h1>
+          <p class="page-lead" data-reveal style="--i:2">Name, email, and company. This form stays in your browser. Nothing is posted to a server. Use info@myshipfront.com if you want the note to land.</p>
 
-        <form class="form" data-sheet-form novalidate>
+          <form class="form" data-sheet-form novalidate>
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
@@ -73,12 +75,35 @@
         </form>
 
         <div id="form-status" class="form-status" data-form-status role="status" aria-live="polite"></div>
+        </div>
+
+        <aside class="page-aside" data-reveal style="--i:3">
+          <p class="kicker">Warehouse</p>
+          <address>
+            1933 S. Broadway<br>
+            Los Angeles CA 90007
+          </address>
+          <p><a href="mailto:info@myshipfront.com">info@myshipfront.com</a></p>
+          <p class="form-note">No phone. Preview only.</p>
+        </aside>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-row">
+      <a class="footer-brand" href="../" aria-label="Shipfront home">
+        <svg class="mark" viewBox="0 0 24 26" aria-hidden="true">
+          <g fill="none" stroke="#000000" stroke-width="1.25" stroke-linecap="square" stroke-linejoin="miter">
+            <path d="M7 9 L12 6 L17 9 L12 12 Z"/>
+            <path d="M7 9 L7 16 L12 19 L17 16 L17 9"/>
+            <path d="M12 12 L12 19"/>
+            <path d="M12 6 L12 13 L7 16"/>
+            <path d="M12 13 L17 16"/>
+          </g>
+        </svg>
+        <span>SHIPFRONT</span>
+      </a>
       <span>1933 S. Broadway, Los Angeles CA 90007</span>
       <a href="mailto:info@myshipfront.com">info@myshipfront.com</a>
       <span class="byline">Built by David T Phung</span>
@@ -94,6 +119,7 @@
         <button class="sheet-close" type="button" data-sheet-dismiss>Close</button>
       </div>
       <ul class="nav-links">
+        <li><a href="../#network">Network</a></li>
         <li><a href="../#why">Why Shipfront</a></li>
         <li><a href="../contact/">Contact</a></li>
         <li><a class="cta" href="../quote/" aria-current="page">Get a Quote</a></li>
