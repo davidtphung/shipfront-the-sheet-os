@@ -36,7 +36,7 @@ Rules that hold everywhere in this repo:
 ## What is on the home page
 
 1. Floating nav that compacts onto a white plate after scroll and springs out of the way on the way down.
-2. Hero with the order-flow panel: STORE, ORDER, INVENTORY, PICK, PACK, SHIP, DELIVER. Labeled illustrative.
+2. Hero with the order-flow panel: STORE, ORDER, INVENTORY, PICK, PACK, SHIP, DELIVER. Labeled illustrative. The panel walks those seven stations. On a phone it becomes a vertical rail you can hold on a step.
 3. On the floor chip band.
 4. `#network`, a sticky node graph across STORE, INVENTORY, FULFILLMENT, QUALITY CHECK, CARRIER,
    and CUSTOMER. Desktop track is capped at 160vh and does not hijack scroll. Mobile falls back to a
